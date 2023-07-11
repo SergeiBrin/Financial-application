@@ -16,9 +16,7 @@ public class Converter {
     }
 
     public void convert(double rubles, String currency) {
-        if (getRate(currency) == 0) {
-
-        } else {
+        if (getRate(currency) != 0) {
             System.out.println("Ваши сбережения: " + "<" + rubles * getRate(currency) + "> " + "<" + currency + ">");
         }
     }
